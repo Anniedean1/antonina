@@ -1,0 +1,51 @@
+body{
+    background:url(https://cdn.pixabay.com/photo/2021/07/18/04/00/lotus-6474572__340.jpg) no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    display: grid;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.container{
+    width:30rem;
+    height:20rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, .2);
+    position:relative;
+    background:inherit;
+    overflow:hidden;
+    border-radius:5px;
+    z-index:1;
+    padding: 13px;
+    font-size:medium #e20c90;
+    font-family:'cinzel',serif;
+    color:#e0dddd;
+}
+
+.container::before{
+    content:"";
+    position:absolute;
+    background:inherit;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    box-shadow: inset 0 0 2000px rgba(255,255,255, .5);
+    filter:blur(10px);
+    margin:-20px;
+    z-index:-1;
+}
+footer{
+    text-align: center;
+    color:#e0dddd;
+    font-family: 'cinzel', serif;
+
+}
+
+/*mobile*/
+@media only screen and (max-device-width:480px){
+    div#wrapper {
+        width:400px;
+    }
+}
